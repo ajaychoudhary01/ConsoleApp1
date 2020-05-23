@@ -1,0 +1,19 @@
+node{
+    stage('SCM'){
+        echo 'Gathering code from VC'
+        git branch: '${branch}', url:'https://github.com/ajaychoudhary01/ConsoleApp1.git'
+    }
+    stage('Build'){
+        echo 'Build...'
+        sh 'dotnet --version'
+        sh 'dotnet build ConsoleApp1'
+        echo 'Building new feature'
+    }
+    stage('Test'){
+        echo 'Testing....'
+    }
+    stage('Deploy')
+    {
+        echo 'Deploying... '
+    }
+}
