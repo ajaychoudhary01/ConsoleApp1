@@ -16,6 +16,6 @@ node{
     {
         echo 'Deploying... '
         echo 'sh printenv | sort'
-        githubNotify context: 'Jenkins', credentialsId: 'github-key', repo: "${GIT_URL}",  status: 'SUCCESS', sha: "${GIT_COMMIT}"
+        githubNotify context: 'Jenkins', credentialsId: 'github-key', account: 'ajaychoudhary01', repo: "ConsoleApp1",  status: 'SUCCESS', sha: "${GIT_COMMIT}"
     }
 }
