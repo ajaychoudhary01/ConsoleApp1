@@ -14,7 +14,7 @@ node{
     }
     stage('Deploy')
     {
-        echo 'Deploying... '
+        echo 'Deploying...... '
         //githubNotify context: 'Jenkins', credentialsId: 'github-user', account: 'ajaychoudhary01', repo: "ConsoleApp1",  status: 'SUCCESS', sha: "5ae0dbffedc2a368ab2ac564247c6446ec360479"
     }
 }
