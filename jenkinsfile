@@ -15,6 +15,6 @@ node{
     stage('Deploy')
     {
         echo 'Deploying... '
-        githubNotify context: 'Jenkins', credentialsId: 'github-key', status: 'SUCCESS',
+        githubNotify context: 'Jenkins', credentialsId: 'github-key', status: 'SUCCESS'
     }
 }
